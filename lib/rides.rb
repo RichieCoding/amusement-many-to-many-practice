@@ -19,10 +19,15 @@ class Ride
   
 
   def who_got_on
-    Amusement.all.select do |person| 
-      person.ride == self
+    arr = []
+    Amusement.all.each do |person| 
+      if person.ride_info == self
+        arr << person.name.name
+      end
     end
+    arr
   end
+
 
 
 end
