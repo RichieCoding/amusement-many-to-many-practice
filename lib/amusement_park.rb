@@ -1,10 +1,10 @@
 class Amusement
-  attr_accessor :ride, :name
+  attr_accessor :ride_info, :name
 
   @@all = []
 
-  def initialize(ride, name)
-    @ride = ride
+  def initialize(ride_info, name)
+    @ride_info = ride_info
     @name = name
     @@all << self
   end

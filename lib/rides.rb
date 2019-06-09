@@ -1,3 +1,5 @@
+require "pry"
+
 class Ride
   attr_accessor :name, :type, :excitement_level
 

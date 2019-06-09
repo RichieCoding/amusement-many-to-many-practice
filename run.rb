@@ -19,6 +19,8 @@ richard.get_on_ride(nitro)
 josh.get_on_ride(torando)
 ace.get_on_ride(bugaboo)
 richard.get_on_ride(bugaboo)
+richard.get_on_ride(torando)
+josh.get_on_ride(bugaboo)
 
 
 

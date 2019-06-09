@@ -1,3 +1,5 @@
+require "pry"
+
 class Person
   attr_accessor :name, :age, :courage
 
@@ -19,9 +21,13 @@ class Person
   end
 
   def rides
-    Amusement.all.select do |ride|
-      ride.name == self
+    arr = []
+    Amusement.all.each do |ride|
+      if ride.name == self
+        arr << ride.ride_info.name
+      end
     end
+    arr
   end
 
   def can_i_get_on(ride)
